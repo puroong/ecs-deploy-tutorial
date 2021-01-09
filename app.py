@@ -17,5 +17,9 @@ def health_check():
 def new_2():
     return "new2"
 
+@app.route("/new3")
+def new_3():
+    return "new3"
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
