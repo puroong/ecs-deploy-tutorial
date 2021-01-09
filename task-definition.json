@@ -1,0 +1,28 @@
+{
+  "executionRoleArn": "arn:aws:iam::071644317622:role/ecsTaskExecutionRole",
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "hostPort": 8080,
+          "protocol": "tcp",
+          "containerPort": 8080
+        }
+      ],
+      "image": "071644317622.dkr.ecr.ap-northeast-2.amazonaws.com/fargatedemo/helloapp:revision2",
+      "name": "HelloappContainer"
+    }
+  ],
+  "memory": "512",
+  "taskRoleArn": "arn:aws:iam::071644317622:role/ecsTaskExecutionRole",
+  "compatibilities": [
+    "EC2",
+    "FARGATE"
+  ],
+  "family": "HelloappTask",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc",
+  "cpu": "256"
+}
