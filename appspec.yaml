@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-northeast-2:071644317622::task-definition/HelloappTask:4"
+        TaskDefinition: "arn:aws:ecs:ap-northeast-2:071644317622::task-definition/HelloappTask"
         LoadBalancerInfo:
           ContainerName: "HelloappContainer"
           ContainerPort: 8080
