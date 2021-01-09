@@ -5,6 +5,10 @@ app = Flask(__name__)
 def main():
     return "Main Page"
 
+@app.route("/new")
+def new():
+    return "new"
+
 @app.route("/health-check")
 def health_check():
     return "ok"
