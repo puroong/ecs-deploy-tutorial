@@ -3,7 +3,7 @@ Resources:
   - TargetService:
       Type: AWS::ECS::Service
       Properties:
-        TaskDefinition: "arn:aws:ecs:ap-northeast-2:071644317622::task-definition/HelloappTask"
+        TaskDefinition: "Placeholder: github action will replace this"
         LoadBalancerInfo:
           ContainerName: "HelloappContainer"
           ContainerPort: 8080
