@@ -30,6 +30,16 @@ on:
 name: Deploy to Amazon ECS
 
 jobs:
+  test-secret:
+    name: test secret
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@2
+
+    - name: test
+      run: cat test.json
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
