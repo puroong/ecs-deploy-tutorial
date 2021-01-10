@@ -9,7 +9,6 @@
           "containerPort": 8080
         }
       ],
-      "image": "071644317622.dkr.ecr.ap-northeast-2.amazonaws.com/fargatedemo/helloapp:revision2",
       "name": "HelloappContainer"
     }
   ],
